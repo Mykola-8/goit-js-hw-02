@@ -1,3 +1,4 @@
+"use strict";
 function getShippingCost(country) {
   let price;
   switch (country) {
@@ -18,9 +19,10 @@ function getShippingCost(country) {
       return `Shipping to ${country} will cost ${price} credits`;
       break;
     default:
-      return `Sorry, there is no delivery to your country`;
+      return "Sorry, there is no delivery to your country";
   }
 }
+
 console.log(getShippingCost("Australia"));
 console.log(getShippingCost("Germany"));
 console.log(getShippingCost("China"));
